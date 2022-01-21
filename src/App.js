@@ -7,7 +7,6 @@ import { projectFirestore } from "./firebase/config";
 
 function App() {
   const [selectedImg, setSelectedImg] = useState(null);
-  console.log("selectedImg", selectedImg);
 
   const deletePic = async (id) => {
     if (window.confirm("Are you sure about this?")) {

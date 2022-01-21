@@ -2,13 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const Modal = ({ selectedImg, setSelectedImg, deletePic }) => {
-  // console.log("deletePic", deletePic);
   const closeModal = (e) => {
-    //   e.target.classList.contains("backdrop")
     if (e.target.className !== "modal-image") setSelectedImg(null);
   };
-  const onDelete = (id) => {
-    console.log("ondelete", selectedImg);
+  const onDelete = () => {
     deletePic(selectedImg.id);
   };
   return (
